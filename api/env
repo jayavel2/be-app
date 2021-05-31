@@ -1,0 +1,1 @@
+MONGO_URL = mongodb+srv://mouni123:mouni1998@cluster0.yyvfs.mongodb.net/blog?retryWrites=true&w=majority
