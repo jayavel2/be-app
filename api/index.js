@@ -10,7 +10,7 @@ const multer = require("multer");
 const path = require("path");
 
 
-const PORT= process.env.PORT || 5000;
+const PORT= process.env.MONGO_URL || 5000;
 dotenv.config();
 
 app.listen(process.env.PORT)
