@@ -10,7 +10,7 @@ const multer = require("multer");
 const path = require("path");
 const DB_URL="mongodb+srv://jayavel:Jayavelmongodb@123@cluster0.6elew.mongodb.net/jayavel?retryWrites=true&w=majority"
 console.log("process.env.DB_URL" ,process.env.DB_URL);
-const PORT= process.env.PORT || 5000;
+const PORT=  5000;
 dotenv.config();
 
 app.listen(process.env.PORT)
