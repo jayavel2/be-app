@@ -8,9 +8,9 @@ const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
 const path = require("path");
-
-
-const PORT= process.env.DB_URL || 5000;
+const DB_URL="mongodb+srv://jayavel:Jayavelmongodb@123@cluster0.6elew.mongodb.net/jayavel?retryWrites=true&w=majority"
+console.log("process.env.DB_URL" ,process.env.DB_URL);
+const PORT= process.env.PORT || 5000;
 dotenv.config();
 
 app.listen(process.env.PORT)
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect(DB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
